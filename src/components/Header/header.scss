@@ -1,0 +1,113 @@
+@import "../../style/partials/mixins";
+
+
+.header-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px; 
+    margin-bottom: 10px;
+  }
+  
+  .logo-link {
+    text-decoration: none; 
+    color: inherit; 
+  }
+  
+  .logo-img {
+    width: 150px; 
+    height: auto; 
+  }
+
+.cta {
+  background: none;
+  border-radius: 25px;
+  border: 1px rgb(3, 255, 78) solid;
+  padding: 10px 15px;
+  cursor: pointer;
+  outline: inherit;
+  font-family: cuteFont;
+  font-size: 1.5rem;
+}
+
+.NavBar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 16px;
+  padding:10px 0;
+  background-color: #edc7c7;
+  color: white;
+
+ a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  &:visited {
+      color: inherit; 
+    }
+  cursor: pointer;
+ }
+}
+
+
+
+
+.userAuthContainer {
+  display: flex;
+  flex-direction: column;
+  
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+    @include pageHeader;
+  }
+}
+
+.logOutContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.userNameDisplay {
+  @include pageHeader;
+  color: blue;
+}
+
+
+.NavBar {
+  display: flex;
+  align-items: center; 
+}
+
+.navLink {
+  position: relative; 
+  margin-right: 20px;
+  font-size: 1.5rem;
+ &:last-child {
+  margin-right: 0;
+ }
+}
+
+.navLinkImage {
+  position: absolute; 
+  top:50%;
+  left: 50%; 
+  transform: translate(-50%,-50%); 
+  opacity: 0;
+  transition: opacity 0.3s ease; 
+  width: 50px;
+  height: auto;
+}
+
+.navLink:hover .navLinkImage {
+  opacity: 1; 
+}
+
+.logoutCTA {
+  @include secondaryButton;
+}
+
+.logoutCTA:hover {
+  cursor: pointer;
+}

@@ -1,0 +1,24 @@
+@import '../../style//partials/mixins';
+
+
+.shopheader {
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+    color: #756615;
+}
+
+.detailHeader {
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.detailMaterial {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 100;
+    background-color: yellow;
+    color: red;
+    @include subHeader;
+}

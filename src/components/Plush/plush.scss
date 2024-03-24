@@ -1,0 +1,21 @@
+@import '../../style/partials/mixins';
+
+
+.itemTitle {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.itemImg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    @include tablet {
+        width: 20%;
+    }
+}
+
+.itemContainer {
+    padding-bottom: 48px;
+}

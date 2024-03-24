@@ -1,0 +1,21 @@
+@import '../../style/partials/mixins';
+
+
+.hometitle {
+    @include pageHeader;
+    text-align: center;
+    color: #0f28e7;
+}
+
+.imgContainer {
+    @include equalMargin;
+}
+
+.homePageImg {
+    width: 60%;
+    margin: auto;
+    display: block;
+    @include tablet {
+        width: 20%;
+    }
+}

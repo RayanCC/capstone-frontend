@@ -1,0 +1,36 @@
+@import "../../style/partials/mixins";
+
+.aboutContainer {
+  @include equalMargin;
+  h3 {
+    @include pageHeader;
+  }
+  span {
+    @include subHeader;
+  }
+}
+
+.aboutFounder {
+  margin-bottom: 32px;
+  @include equalPadding;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.aboutPainter {
+    @include equalPadding;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.avatar {
+  width: 60%;
+  margin: auto;
+  display: block;
+  
+  @include tablet {
+    width: 20%;
+  }
+}
+
+

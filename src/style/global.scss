@@ -1,0 +1,9 @@
+@import "./partials//fonts";
+@import "./partials/mixins";
+
+body {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: "cuteFont";
+  }
