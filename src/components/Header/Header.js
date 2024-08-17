@@ -8,6 +8,8 @@ import Shop from "../../assets/img/shop.jpg";
 import Gallery from "../../assets/img/gallery.jpg";
 import AboutUs from "../../assets/img/about.jpg";
 import Contact from "../../assets/img/contact.jpg";
+import SearchBar from "../SearchBar/SearchBar";
+import ShoppingCart from "../ShoppingCart/ShoppingCart";
 
 function Header() {
   const { logout } = useLogout();
@@ -24,9 +26,21 @@ function Header() {
           <img src={Logo} alt="BlueFamilyLogo" className="logo-img" />
         </Link>
 
+
+        <div className="SearchBar-Container">
+          <SearchBar />
+        </div>
+
+
+
+
+
         {user && (
           <div className="logOutContainer">
             <span className="userNameDisplay">HI! {user.username}</span>
+            <div className="shoppingCart-Container">
+              <ShoppingCart />
+            </div>
             <button className="logoutCTA" onClick={handleClick}>
               Log Out
             </button>
@@ -42,6 +56,7 @@ function Header() {
           </div>
         )}
       </div>
+        
 
       <div>
         <nav className="NavBar">

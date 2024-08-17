@@ -1,3 +1,5 @@
+@import '../../style//partials/mixins';
+
 .itemName {
     font-size: 1.5rem;
     text-align: center;
@@ -5,13 +7,15 @@
 }
 
 .itemSize {
-    font-size: 1rem;
+    @include subHeader;
     text-align: center;
     font-weight: 100;
 }
 
 .itemPrice {
-    font-size: 1.2rem;
     text-align: center;
-    font-weight: 600;
+    @include pageHeader;
 }
+
+
+
