@@ -30,26 +30,24 @@ function Header() {
           <SearchBar />
         </div>
 
-        {user && (
-          <div className="logOutContainer">
-            <span className="userNameDisplay">HI! {user.username}</span>
-            <div className="shoppingCart-Container">
-              <ShoppingCart />
-            </div>
-            <button className="logoutCTA" onClick={handleClick}>
-              Log Out
-            </button>
-          </div>
-        )}
-
-        {!user && (
-          <div className="userAuth">
+        <div className={user ? "logOutContainer" : "userAuth"}>
+          {user ? (
+            <>
+              <span className="userNameDisplay">HI! {user.username}</span>
+              <div className="shoppingCart-Container">
+                <ShoppingCart />
+              </div>
+              <button className="logoutCTA" onClick={handleClick}>
+                Log Out
+              </button>
+            </>
+          ) : (
             <div className="userAuthContainer">
               <Link to="/login">Login</Link>
               <Link to="/signup">Signup</Link>
             </div>
-          </div>
-        )}
+          )}
+        </div>
       </div>
 
       <div>
