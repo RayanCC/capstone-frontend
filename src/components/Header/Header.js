@@ -26,14 +26,9 @@ function Header() {
           <img src={Logo} alt="BlueFamilyLogo" className="logo-img" />
         </Link>
 
-
         <div className="SearchBar-Container">
           <SearchBar />
         </div>
-
-
-
-
 
         {user && (
           <div className="logOutContainer">
@@ -56,7 +51,6 @@ function Header() {
           </div>
         )}
       </div>
-        
 
       <div>
         <nav className="NavBar">

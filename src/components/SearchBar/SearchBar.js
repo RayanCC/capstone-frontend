@@ -9,7 +9,7 @@ const SearchBar = () => {
       className="search-input" 
       placeholder="Search Your Products..." 
       />
-      <GoSearch id="Search-icon" />
+      <GoSearch id="search-icon" />
     </div>
   );
 };
