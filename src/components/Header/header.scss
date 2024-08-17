@@ -34,7 +34,7 @@
   font-size: 1.5rem;
 }
 
-.NavBar {
+.navBar {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -91,12 +91,6 @@
 .userNameDisplay {
   @include pageHeader;
   color: blue;
-}
-
-
-.NavBar {
-  display: flex;
-  align-items: center; 
 }
 
 .navLink {

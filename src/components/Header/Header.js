@@ -3,13 +3,9 @@ import { useLogout } from "../../hooks/useLogout";
 import { useAuthContext } from "../../hooks/useAuthContext";
 import Logo from "../../assets/img/logo.png";
 import "../Header/header.scss";
-import Home from "../../assets/img/home.jpg";
-import Shop from "../../assets/img/shop.jpg";
-import Gallery from "../../assets/img/gallery.jpg";
-import AboutUs from "../../assets/img/about.jpg";
-import Contact from "../../assets/img/contact.jpg";
 import SearchBar from "../SearchBar/SearchBar";
 import ShoppingCart from "../ShoppingCart/ShoppingCart";
+import Navlink from "../NavLink/NavLink";
 
 function Header() {
   const { logout } = useLogout();
@@ -51,32 +47,7 @@ function Header() {
       </div>
 
       <div>
-        <nav className="NavBar">
-          <Link to="/home" className="navLink">
-            <span className="navLinkText">Home</span>
-            <img src={Home} alt="Home" className="navLinkImage" />
-          </Link>
-
-          <Link to="/shop" className="navLink">
-            <span className="navLinkText">Shop</span>
-            <img src={Shop} alt="Shop" className="navLinkImage" />
-          </Link>
-
-          <Link to="/gallery" className="navLink">
-            <span className="navLinkText">Gallery</span>
-            <img src={Gallery} alt="Gallery" className="navLinkImage" />
-          </Link>
-
-          <Link to="/aboutus" className="navLink">
-            <span className="navLinkText">About Us</span>
-            <img src={AboutUs} alt="AboutUs" className="navLinkImage" />
-          </Link>
-
-          <Link to="/contact" className="navLink">
-            <span className="navLinkText">Contact</span>
-            <img src={Contact} alt="Contact" className="navLinkImage" />
-          </Link>
-        </nav>
+        <Navlink />
       </div>
     </div>
   );
