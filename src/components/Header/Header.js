@@ -26,7 +26,7 @@ function Header() {
           <SearchBar />
         </div>
 
-        <div className={user ? "logOutContainer" : "userAuth"}>
+        <div className="userAuthContainer">
           {user ? (
             <>
               <span className="userNameDisplay">HI! {user.username}</span>

@@ -8,19 +8,19 @@ import Contact from "../../assets/img/contact.jpg";
 
 const NavLink = () => {
   const navLinks = [
-    { to: "/home", text: "Home", imgSrc: Home, alt: "Home" },
-    { to: "/shop", text: "Shop", imgSrc: Shop, alt: "Shop" },
-    { to: "/gallery", text: "Gallery", imgSrc: Gallery, alt: "Gallery" },
-    { to: "/aboutus", text: "About Us", imgSrc: AboutUs, alt: "About Us" },
-    { to: "/contact", text: "Contact", imgSrc: Contact, alt: "Contact" },
+    { to: "/home", text: "Home", imgSrc: Home},
+    { to: "/shop", text: "Shop", imgSrc: Shop},
+    { to: "/gallery", text: "Gallery", imgSrc: Gallery},
+    { to: "/aboutus", text: "About Us", imgSrc: AboutUs},
+    { to: "/contact", text: "Contact", imgSrc: Contact},
   ];
 
   return (
     <nav className="navBar">
       {navLinks.map((link, index) => (
         <Link key={index} to={link.to} className="navLink">
-          <span className="navLinkText">{link.text}</span>
-          <img src={link.imgSrc} alt={link.alt} className="navLinkImage" />
+          <span className="navLinkTitle">{link.text}</span>
+          <img src={link.imgSrc} alt={link.text} className="navLinkImage" />
         </Link>
       ))}
     </nav>
