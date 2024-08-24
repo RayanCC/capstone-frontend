@@ -6,6 +6,7 @@
     line-height: 16px;
     color: $slate;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     margin-top: 32px;
   
@@ -16,4 +17,10 @@
         font-size: 32px;
     }
   }
+  
+  .footer-copyright {
+    display: flex;
+    justify-content: center;
+  }
+
   

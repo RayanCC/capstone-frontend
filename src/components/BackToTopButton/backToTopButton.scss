@@ -1,0 +1,11 @@
+@import "../../style/partials/mixins";
+@import "../../style/partials/fonts";
+
+
+.backtotopbutton {
+    background-color: #37475A;
+    color: aliceblue;
+    font-family:  cuteFont;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
