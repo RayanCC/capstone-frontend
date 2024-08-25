@@ -1,26 +1,86 @@
 @import "../../style//partials/mixins";
 
-.footer {
-    font-weight: 400;
-    font-size: 11px;
-    line-height: 16px;
-    color: $slate;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-top: 32px;
-  
-    @include tablet {
-      font-size: 12px;
-    }
-    @include tablet {
-        font-size: 32px;
-    }
+.footer p {
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 16px;
+  color: $slate;
+  display: flex;
+  justify-content: center;
+  margin-top: 32px;
+
+  @include tablet {
+    font-size: 12px;
   }
-  
-  .footer-copyright {
-    display: flex;
-    justify-content: center;
+  @include desktop {
+    font-size: 32px;
+  }
+}
+
+.footer-copyright {
+  display: flex;
+  justify-content: center;
+}
+
+.footernavcol-container {
+  display: flex;
+  background-color: rgb(5, 58, 104);
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  width: 100%;
+  max-width: 100vw;
+}
+
+.footernavcol-contents {
+  display: flex;
+  flex: 1;
+  margin: 10px auto;
+}
+
+.footernavcol-link {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+}
+
+.footernavcol-head {
+  white-space: nowrap;
+  overflow: hidden;
+
+  color: white;
+  font-size: 11px;
+  padding: 0 5px;
+
+  @include tablet {
+    font-size: 20px;
   }
 
-  
+  @include desktop {
+    font-size: 30px;
+  }
+}
+
+.footernavcol-list {
+  list-style-type: none;
+  white-space: nowrap;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  font-size: 10px;
+  @include tablet {
+    font-size: 20px;
+  }
+
+  @include desktop {
+    font-size: 30px;
+  }
+
+}
+
+.footernavcol-link-item {
+  text-decoration: none;
+  color: #DDD;
+  &:hover {
+    text-decoration: underline;
+  }
+}
