@@ -9,11 +9,11 @@ const BackToTopButton = () => {
     });
   };
 
-  return <button onClick={scrollToTop} className="backtotopbutton">
-    
-    Back To Top
-    
-    </button>;
+  return (
+    <button onClick={scrollToTop} className="backtotopbutton">
+      Back To Top
+    </button>
+  );
 };
 
 export default BackToTopButton;
