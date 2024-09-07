@@ -16,6 +16,7 @@
 .logo-img {
   width: 3rem;
   height: auto;
+
   @include tablet {
     width: 6rem;
   }
@@ -40,13 +41,18 @@
   padding: 10px 0;
   background-color: #edc7c7;
   color: white;
+  position: sticky;
+  width: 100%;
+  top: 0;
 
   a {
     text-decoration: none;
     font-size: 1.5rem;
+
     &:visited {
       color: inherit;
     }
+
     cursor: pointer;
   }
 }
@@ -82,6 +88,7 @@
   position: relative;
   margin-right: 20px;
   font-size: 1.5rem;
+
   &:last-child {
     margin-right: 0;
   }
@@ -112,7 +119,12 @@
 
 .SearchBar-Container {
   margin: 10px 0px;
+
   @include tablet {
     width: 50%;
   }
+}
+
+.nav-heading {
+  height: 18vh;
 }

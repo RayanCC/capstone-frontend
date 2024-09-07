@@ -8,22 +8,24 @@ import Contact from "../../assets/img/contact.jpg";
 
 const NavLink = () => {
   const navLinks = [
-    { to: "/home", text: "Home", imgSrc: Home},
-    { to: "/shop", text: "Shop", imgSrc: Shop},
-    { to: "/gallery", text: "Gallery", imgSrc: Gallery},
-    { to: "/aboutus", text: "About Us", imgSrc: AboutUs},
-    { to: "/contact", text: "Contact", imgSrc: Contact},
+    { to: "/home", text: "Home", imgSrc: Home },
+    { to: "/shop", text: "Shop", imgSrc: Shop },
+    { to: "/gallery", text: "Gallery", imgSrc: Gallery },
+    { to: "/aboutus", text: "About Us", imgSrc: AboutUs },
+    { to: "/contact", text: "Contact", imgSrc: Contact },
   ];
 
   return (
-    <nav className="navBar">
-      {navLinks.map((link, index) => (
-        <Link key={index} to={link.to} className="navLink">
-          <span className="navLinkTitle">{link.text}</span>
-          <img src={link.imgSrc} alt={link.text} className="navLinkImage" />
-        </Link>
-      ))}
-    </nav>
+    <div className="nav-heading">
+      <nav className="navBar">
+        {navLinks.map((link, index) => (
+          <Link key={index} to={link.to} className="navLink">
+            <span className="navLinkTitle">{link.text}</span>
+            <img src={link.imgSrc} alt={link.text} className="navLinkImage" />
+          </Link>
+        ))}
+      </nav>
+    </div>
   );
 };
 
