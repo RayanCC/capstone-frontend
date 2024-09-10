@@ -41,9 +41,7 @@
   padding: 10px 0;
   background-color: #edc7c7;
   color: white;
-  position: sticky;
-  width: 100%;
-  top: 0;
+
 
   a {
     text-decoration: none;
@@ -125,6 +123,9 @@
   }
 }
 
-.nav-heading {
-  height: 18vh;
+.header-wrapper {
+  position: sticky;
+  width: 100%;
+  top: 0;
+  background-color: pink;
 }
