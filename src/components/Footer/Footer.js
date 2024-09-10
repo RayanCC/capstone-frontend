@@ -1,6 +1,6 @@
 import "../Footer/footer.scss";
 import BackToTopButton from "../BackToTopButton/BackToTopButton";
-import FooterNav from "../FooterNav/FooterNav";
+import FooterNav from "./components/FooterNav/FooterNav";
 
 const Footer = () => {
   return (
