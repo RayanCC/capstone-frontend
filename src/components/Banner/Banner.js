@@ -8,7 +8,7 @@ import Contact from "../../assets/img/contact.jpg";
 import Home from "../../assets/img/home.jpg";
 import Shop from "../../assets/img/shop.jpg";
 import "../Banner/banner.scss";
-import Bannerscrolling from "./Bannerscrolling";
+import useScrolling from "./useScrolling";
 
 const Banner = () => {
   const images = [
@@ -21,7 +21,7 @@ const Banner = () => {
     { src: Home, alt: "banner7", text: "Home Sweet Home" },
     { src: Shop, alt: "banner8", text: "Shopping Pink" },
   ];
-  const { scrolling, scrollLeft, scrollRight } = Bannerscrolling();
+  const { scrolling, scrollLeft, scrollRight } = useScrolling();
 
   return (
     <div className="banner-section">

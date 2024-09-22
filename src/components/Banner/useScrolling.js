@@ -1,6 +1,6 @@
 import { useRef } from "react";
 
-const Bannerscrolling = (images) => {
+const useScrolling = (images) => {
   const scrolling = useRef(null);
 
   const scrollLeft = () => {
@@ -38,4 +38,4 @@ const Bannerscrolling = (images) => {
   return { scrolling, scrollLeft, scrollRight };
 };
 
-export default Bannerscrolling;
+export default useScrolling;

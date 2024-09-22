@@ -47,9 +47,9 @@
     width: 100%;
     scroll-behavior: smooth;
 
-    &:hover {
-        overflow-x: auto;
-    }
+    // &:hover {
+    //     overflow-x: auto;
+    // }
 
     @include largescreen {
         justify-content: center;
