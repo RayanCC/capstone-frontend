@@ -2,8 +2,15 @@
 @import "./partials/mixins";
 
 body {
-    margin: 0;
-    padding: 0;
-    scroll-behavior: smooth;
-    font-family: "cuteFont";
-  }
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  font-family: "cuteFont";
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow: auto;
+}
