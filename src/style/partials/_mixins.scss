@@ -76,6 +76,11 @@ $largescreen: 1440px;
     font-size: 15px;
     line-height: 26px;
   }
+
+  @include tablet {
+    font-size: 28px;
+    line-height: 24px;
+  }
 }
 
 @mixin bodyMedium {
@@ -85,6 +90,11 @@ $largescreen: 1440px;
   @include mobile {
     font-size: 13px;
     line-height: 20px;
+  }
+
+  @include tablet {
+    font-size: 26px;
+    line-height: 22px;
   }
 }
 

@@ -1,0 +1,124 @@
+@import "../../style/partials/mixins";
+
+.item-detail {
+    display: flex;
+    padding: 20px;
+
+    @include mobile {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.item-image {
+    max-width: 50%;
+    margin-right: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+    @include mobile {
+        max-width: 100%;
+        margin-right: 0;
+    }
+
+
+}
+
+.item-image img {
+    width: 100%;
+    height: auto;
+    display: flex;
+
+    @include desktop {
+        max-width: 600px;
+    }
+}
+
+.item-info {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+
+    h1 {
+        @include pageHeader;
+    }
+
+    @include mobile {
+        align-items: center;
+    }
+}
+
+.divider {
+    height: 1px;
+    background-color: silver;
+    width: 100%;
+}
+
+.item-price {
+    font-size: 2rem;
+    color: green;
+}
+
+.item-description {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.description-title {
+    font-weight: bolder;
+    @include bodyLarge;
+}
+
+.description-info {
+    @include bodyMedium;
+}
+
+.add-to-cart-container {
+    margin-top: 20px;
+}
+
+.add-to-cart-button {
+    display: inline-block;
+    padding: 10px 5%;
+    background-color: #ffe225;
+    color: black;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+
+    // Responsive styles
+    width: 90%;
+    max-width: 300px;
+
+    // Remove default button styles
+    appearance: none;
+    outline: none;
+
+    &:hover {
+        background-color: #45a049;
+        transform: translateY(-2px);
+    }
+
+    &:active {
+        background-color: #3e8e41;
+        transform: translateY(0);
+    }
+
+    @media (max-width: 320px) {
+        font-size: 1rem;
+    }
+}
+
+.item-description tr td:first-child {
+    padding-right: 50px;
+
+    @include largescreen {
+        padding-right: 0;
+    }
+}

@@ -12,6 +12,7 @@ import ShopDetail from "../src/pages/Shop/ShopDetail";
 import Login from "./pages/Auth/Login";
 import Signup from "./pages/Auth/Signup";
 import "./style/global.scss";
+import ItemDetail from "./components/ItemDetail/ItemDetail";
 
 function App() {
   const { user } = useAuthContext();
@@ -29,6 +30,7 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/shop" element={<Shop />} />
             <Route path="/shop/:id/:category" element={<ShopDetail />} />
+            <Route path="/item/:id" element={<ItemDetail />} />
             <Route
               path="/login"
               element={!user ? <Login /> : <Navigate to="/" />}
