@@ -1,6 +1,6 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import { images } from "../Banner/Banner";
+import { images } from "../../util/Constant";
 import "../ItemDetail/itemdetail.scss";
 
 const ItemDetail = () => {
