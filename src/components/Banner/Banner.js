@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { images } from "../../util/Constant";
+import { products } from "../../util/Constant";
 import "../Banner/banner.scss";
 import useScrolling from "./useScrolling";
 
@@ -9,7 +9,7 @@ const Banner = () => {
   return (
     <div className="banner-section">
       <div className="main-banner">
-        {images.map(({ src, alt, text, id }) => (
+        {products.map(({ src, alt, text, id }) => (
           <div className="banner-item" key={alt}>
             <Link to={`/item/${id}`}>
               <img src={src} alt={alt} className="banner-img" />
@@ -24,7 +24,7 @@ const Banner = () => {
           ←
         </button>
         <div className="scrolling-section" ref={scrolling}>
-          {images.map(({ src, alt }) => (
+          {products.map(({ src, alt }) => (
             <div className="scrolling-item" key={alt}>
               <img src={src} alt={alt} className="scrolling-img" />
             </div>

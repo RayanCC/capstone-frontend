@@ -1,11 +1,11 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import { images } from "../../util/Constant";
+import { products } from "../../util/Constant";
 import "../ItemDetail/itemdetail.scss";
 
 const ItemDetail = () => {
   const { id } = useParams();
-  const item = images.find((image) => image.id === id);
+  const item = products.find((product) => product.id === id);
 
   if (!item) {
     return <div>Item not found.</div>;
