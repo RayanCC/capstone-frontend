@@ -7,7 +7,7 @@ import Contact from "../assets/img/contact.jpg";
 import Home from "../assets/img/home.jpg";
 import Shop from "../assets/img/shop.jpg";
 
-export const images = [
+export const products = [
   {
     id: "1",
     src: ThumbGreen,
@@ -17,6 +17,7 @@ export const images = [
     description: "This is Green Plush",
     Brand: "Blue-Family",
     Colour: "Green",
+    category: "green",
     Dimensions: "5D x 5W x 5H",
     Filledwith: "Pure Cotton",
   },
@@ -29,6 +30,7 @@ export const images = [
     description: "This is Blue Plush",
     Brand: "Blue-Family",
     Colour: "Blue",
+    category: "blue",
     Dimensions: "5D x 5W x 5H",
     Filledwith: "Pure Cotton",
   },
@@ -41,6 +43,7 @@ export const images = [
     description: "This is Pink Plush",
     Brand: "Blue-Family",
     Colour: "Pink",
+    category: "pink",
     Dimensions: "5D x 5W x 5H",
     Filledwith: "Pure Cotton",
   },
@@ -53,6 +56,7 @@ export const images = [
     description: "This is About Plush",
     Brand: "Blue-Family",
     Colour: "Red",
+    category: "red",
     Dimensions: "5D x 5W x 5H",
     Filledwith: "Pure Cotton",
   },
@@ -65,6 +69,7 @@ export const images = [
     description: "This is Coop Plush",
     Brand: "Blue-Family",
     Colour: "Blue And Green",
+    category: "blue and green",
     Dimensions: "5D x 5W x 5H",
     Filledwith: "Pure Cotton",
   },
@@ -77,6 +82,7 @@ export const images = [
     description: "This is DoubleColor Plush",
     Brand: "Blue-Family",
     Colour: "Mint",
+    category: "mint",
     Dimensions: "5D x 5W x 5H",
     Filledwith: "Pure Cotton",
   },
@@ -89,6 +95,7 @@ export const images = [
     description: "This is SweetHome Plush",
     Brand: "Blue-Family",
     Colour: "BrownBlue",
+    category: "brownblue",
     Dimensions: "5D x 5W x 5H",
     Filledwith: "Pure Cotton",
   },
@@ -101,6 +108,7 @@ export const images = [
     description: "This is Shop Plush",
     Brand: "Blue-Family",
     Colour: "DarkPink",
+    category: "darkpink",
     Dimensions: "5D x 5W x 5H",
     Filledwith: "Pure Cotton",
   },
